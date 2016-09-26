@@ -1,0 +1,58 @@
+div.bio{
+    background-color: #87CEFA;
+	font-size: 20;
+}
+
+body{
+	text-align: center;
+	align: center;
+	font-family: Courier New;
+	color: #00008B;
+	
+	background-image: url("jayhawk");
+    background-repeat: repeat;
+}
+
+h1{
+	font-size: 50;
+	background-color: white;
+}
+
+h2{
+	font-size: 30;
+}
+
+div.links{
+	font-size: 20;
+	background-color: #DB7093;
+}
+
+/*
+I borrowed the animation from here and made a few modifications:
+https://css-tricks.com/snippets/css/shake-css-keyframe-animation/
+*/
+img:hover
+{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-4px, 4px, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(8px, -4px, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-16px, 4px, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(16px, -4px, 0);
+  }
+}
